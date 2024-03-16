@@ -224,6 +224,21 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>
+        function changeLanguage(selectedLanguage){
+            var pageUrls = {
+                'en': 'index-en.html',
+                'cz':'index-cz.html'
+            };
+
+            var newPage = pageUrls[selectedLanguage];
+            if (newPage) {
+                window.location.href = newPage;
+            }
+            
+        }
+
+      </script>
       
       
 </body>
