@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Osobní Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/400453dae3.js" crossorigin="anonymous"></script>
 </head>
@@ -14,22 +14,24 @@
             <nav>
                 <img src="img/logo.png" alt="logo" class="logo">
                 <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#header">Domů</a></li>
+                    <li><a href="#about">O mě</a></li>
+                    <li><a href="#services">Služby</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                     <li><select id="language-select" onchange="changeLanguage(this.value)">
-                        <option value="en">EN</option>
                         <option value="cz">CZ</option>
-                    </select></li>
+                        <option value="en">EN</option>
+                    </select>
+                    <a href="index-cz.html" id="page-link">Page</a>
+                    </li>
                     <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Amateur Developer</p>
-                <h1>Hi, I'm <span>Big P</span>avel<br>From Czechia</h1>
+                <p>Hobby Developer</p>
+                <h1>Zdravím,<br> jsem <span>Big P</span>avel <br>z Čech</h1>
             </div>
         </div>
     </div>
@@ -41,36 +43,35 @@
                     <img src="img/user.png" alt="user">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm aspiring web developer with recently discovered 
-                        passion for learning and self-improvement. 
-                        Besides coding i love yoga and gardnering.
+                    <h1 class="sub-title">O mě</h1>
+                    <p>Jsem aspirujicí web developer s nově oběvenou vášní pro vzdělevání se a sebezlepšování.                       passion for learning and self-improvement. 
+                       Kromě počítačů miluji yogu, meditace a zahradničení.
                     </p>
 <!--SWITCHABLE TABS-->
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
-                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projekty</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>HTML/CSS/Javascipt</span><br>This Page</li>
+                            <li><span>HTML/CSS/Javascipt</span><br>Tato stránka</li>
                             <li><span>SQL</span><br>
                                 Understanding of relational databases and select queries</li>
                             <li><span>Marketing Cloud</span><br>
-                                General understanding of basic features</li>
-                            <li><span>Massages</span><br>Certified maseues with knowledge of 
-                            trigger points for quick pain relief 
-                            (not directly relevant but might come in handy in office enviroment)</li>
-                            <li><span>Stable Diffusion</span><br>proficient in using ComfyUI</li>
+                                Obecné seznámení se základními funkcemi</li>
+                            <li><span>Masáže</span><br>Certifikovaný masér se znalozstí 
+                                                tlakových bodů pro rychlou úlevu od bolesti  
+                                            (může být úžitečné v kancelářském prostředí)</li>
+                            <li><span>Stable Diffusion</span><br>veškeré ilustrace na této stránce vytvořeny v ComfyUI</li>
                         </ul>
                     </div>
                     <div class="tab-contents " id="projects">
                         <ul>
-                            <li><span>Calculator</span><br><a href="#">It does Math</a></li>
-                            <li><span>Digital clock</span><br><a href="#">Never Late</a></li>
-                            <li><span>Stopwatch</span><br><a href="#">Catches Time</a></li>
-                            <li><span>Random password generator</span><br><a href="#">Might actualy come in handy</a></li>
-                            <li><span>Units and scales converter</span><br><a href="#">From Pounds to common sense!</a></li>
+                            <li><span>Kalkulačka</span><br><a href="#">Dělá matiku</a></li>
+                            <li><span>Digitalní Hodiny</span><br><a href="#">Stroj času</a></li>
+                            <li><span>Stopky</span><br><a href="#">Lapač času</a></li>
+                            <li><span>Generátor náhodných hesel</span><br><a href="#">užitečná záležitost</a></li>
+                            <li><span>Převaděč jednotek a měr</span><br><a href="#">Z liber do !</a></li>
                         </ul>
                     </div>
                     </div>
@@ -81,7 +82,7 @@
 <!--SERVICES-->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
+        <h1 class="sub-title">Moje služby</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
@@ -153,7 +154,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title">Kontaktujte mne</h1>
                 <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
                 <p><i class="fa-solid fa-phone"></i>0123456789</p>
                 <div class="social-icons">
@@ -166,17 +167,17 @@
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <input type="text" name="name" placeholder="Jméno" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" rows="6" placeholder="Váš Vzkaz"></textarea>
+                    <button type="submit" class="btn btn2">Odeslat</button>
                 </form>
                 <span id="msg"></span>
             </div>
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright © Pavel. Made with <i class="fa-solid fa-heart"></i> by BigP</p>
+        <p>Copyright © Pavel. Vyrobeno s <i class="fa-solid fa-heart"></i> by BigP</p>
     </div>  
 </div>
     <script>
@@ -215,7 +216,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message has been sent"
+                msg.innerHTML = "Vzkaz odeslán"
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)
@@ -227,8 +228,8 @@
       <script>
         function changeLanguage(selectedLanguage){
             var pageUrls = {
-                'en': 'index.html',
-                'cz':'cz/index.html'
+                'en': 'index-en.html',
+                'cz':'index-cz.html'
             };
 
             var newPage = pageUrls[selectedLanguage];
