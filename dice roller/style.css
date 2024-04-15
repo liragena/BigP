@@ -14,14 +14,14 @@ button{
     padding:10px 15px;
     border-radius: 10px;
     border: none;
-    background-color: rgb(68, 117, 224);
+    background-color: #ff004f;
     color: white;
     font-weight: bold;
     cursor: pointer;
     margin:15px;
 }
 button:hover{
-    background-color: rgb(9, 85, 248);
+    background-color: #ff0015;
 }
 button:active{
     background-color:  rgb(9, 60, 170);
@@ -36,11 +36,15 @@ input{
 #diceImages img{
     max-width: 300px;
     margin:20px 0px;
-    border-radius: 5px;
-    box-shadow:2px 2px 5px;
+    border:none;
 }
 body{
     max-width: 350px;
     margin:auto;
-    background-color: gray;
+    background-color: rgb(39, 39, 39);
+}
+@media (max-width:480px) {
+    #diceImages img {
+        height:200px;
+    }
 }

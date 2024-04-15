@@ -19,3 +19,16 @@ body{
     background-color: rgba(rgba(175, 175, 175, 0.1), green, blue, alpha);
     width: 100%;
 }
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #clock {
+        font-size: 4rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Additional adjustments for even smaller screens */
+@media (max-width: 480px) {
+    #clock {
+        font-size: 3rem; /* Further adjust font size for very small screens */
+    }
+}
