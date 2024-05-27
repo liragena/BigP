@@ -36,7 +36,7 @@ body{
     font-weight: bold;
     padding: 10px 20px;
     margin: 5px;
-    min-width: 125px;
+    width: 125px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -64,9 +64,20 @@ body{
     background-color: black;
     color:white;
 }
+@media (max-width:768px) {
+    #controls button{
+        width:100px;
+        padding:5px 10px;
+        font-size:1,5rem;
+    }
+}
 @media (max-width:480px) {
     #display {
         font-size: 3rem;
          }
-
+    #controls button{
+        padding:5px 10px;
+        font-size:1rem;
+        width:75px
+    }
 }
