@@ -80,12 +80,12 @@ button:active {
 /* Media Query for smaller screens */
 @media (max-width: 480px) {
     #keys {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: none;
     }
 
     .operator-btn {
-        grid-column: span 3;
+        grid-column: span 1;
     }
 
     button {
