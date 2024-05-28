@@ -3,11 +3,12 @@
     text-align: center;
     font-size: 1.7rem;
     font-weight: bold;
-    border:2px solid black;
+    border:2px solid  #ff004f;
     border-radius: 4px;
     box-shadow:5px 5px 15px;
-    background-color: rgb(160, 160, 160);
-    margin-top:20px;    
+    background-color: black;
+    margin-top:20px;
+    color:white;    
 }
 button{
     font-size: 1.5rem;
@@ -41,7 +42,7 @@ input{
 body{
     max-width: 350px;
     margin:auto;
-    background-color: rgb(39, 39, 39);
+    background-color: black;
 }
 @media (max-width:480px) {
     #diceImages img {
